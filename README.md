@@ -4,10 +4,5 @@ This repository contains the projects I've worked on.
 
 # Overview 
 
-### Web Project 
-- HTML
-- CSS
-- Javascript
-
-### Databse
-- Oracle SQL
+- Web Project ( HTML, CSS & JavaScript )
+- Database ( Oracle SQL )
