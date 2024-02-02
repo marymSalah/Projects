@@ -35,10 +35,3 @@ The script.js file contains functions for form validation and user interaction. 
 formCheck(): Validates the form fields and displays error messages if necessary. If the form is successfully submitted, it displays a thank you message.
 
 check(): Checks if the user has submitted the form on any page and displays user information if available.
-
-## Getting Started
-To run the project locally, clone this repository and open the main HTML file (`project.html`) in a web browser.
-
-```bash
-git clone https://github.com/your-username/bahrain-tour-project.git
-cd bahrain-tour-project
