@@ -1,0 +1,637 @@
+/*body for everything else*/
+body {background-image: url("images/back.jpg");}
+/*main page background */
+#bmain {background-color:#eee9e3;
+margin:-1%}
+
+#fix {position: sticky;top: 0;background-color:#eee9e3;
+z-index:2;
+margin-left:-7px;
+margin-right:-7px;}/*z index is to overlap with the photos*/
+
+
+#header{height:10%; color:#524d4b;
+width:100%;
+margin-top:-1%;}
+#headerleft{width:25%;
+float:left;
+height:100%;
+}
+#header span{font-weight:bold;}
+
+#headermiddle {width:50%;
+height:100%;
+margin:0 auto;
+float:left;
+}
+/*to display the list in a horizontal line*/
+#headermiddle li {display:inline;
+padding-left:70px;}
+#headermiddle ul {display:inline-block;
+text-align:center;}
+
+#drop {
+	/*Position changes according to the "parent"*/
+	 position: relative;
+	 /*To display a list in the block vertically*/
+	display: inline-block;
+}
+
+#dlink {
+	/*To hide it*/
+    display: none;
+    /*so that it doesn't change in the block itself*/
+    position: absolute;
+    background-color: white;
+    width:200%;
+}
+  
+#dlink a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family:Bodoni MT;
+  font-weight:none;
+}
+
+/* To customize how the button looks */
+button.dropbutton {
+	background-color:#eee9e3;
+    border: none;
+	color:#524d4b;
+	font-family:Helvetica;
+}
+/*So when the mouse is over the text in the drop down menu it changes colors*/
+#dlink a:hover {background-color: #f1f1f1; font-family:Bodoni MT;  font-size:115%;}
+/*Doesn't change place*/
+#drop:hover #dlink {display: block;}
+/*When mouse is over the button its customized*/
+#drop:hover .dropbutton {background-color: #e4d9ca; color:purple;
+height:23px;}
+
+
+/* button css*/
+#headerright{float:right;
+width:25%;
+height:100%;}
+/*contact us button*/
+#headerright button{float:right;
+height:50%;
+background-color:#eee9e3;
+font-family:helvetica;
+cursor:pointer;}
+#contact{
+margin-right:45px;
+margin-top:12px;
+width:30%;
+border: 1px solid #524d4b;
+border-radius:12px;
+}
+
+#headerright button:hover{
+	box-shadow: 0 6px 6px 0 rgba(0,0,0,0.24);
+
+}
+
+/*user profile button*/
+#user{
+	display:none;
+	margin-right:10px;
+	margin-top:13px;
+	border:none;
+	text-align:center;
+}
+#user img{
+	height:70%;
+	float:left;
+	border-radius:5px;
+	margin-top:-3%;
+}
+/*span in username*/
+#login{font-family:helvetica;
+color:#524d4b;
+height:100%;
+}
+/*email */
+#emailup{
+	font-size:8px;
+}
+#header a {
+	color:#524d4b;
+    text-decoration:none;
+	}
+
+#headermiddle a:hover {
+	color:purple;
+	text-decoration:underline;
+	}
+	/* subject for sub webpages*/
+#subject{
+	height:15%; 
+	color:#524d4b;
+	}
+#subjectMain{
+	height:25%; 
+	color:#524d4b; 
+	}
+#subject h1{
+	font-weight:none;
+	font-family:Bodoni MT;
+	font-size:90px; 
+	margin:0 auto; 
+	text-align:center;
+	}
+	
+hr {
+	border-top:1.5px solid purple; 
+	border-bottom:0;
+	}
+
+
+
+/*subject for main page */
+#blank {height:15%;}
+#subjectLEFT{
+	width:75%; 
+    float:left;
+    height:85%;
+ }
+#subjectLEFT h1{
+	float:right; 
+	font-size:109px;
+	margin-top:-10px; 
+	font-weight:none; 
+	font-family:Bodoni MT;
+	}
+#subjectRIGHT{
+	width:25%; 
+	float:right;
+	height:85%;
+	}
+
+/*body of main page*/
+#main{
+	color:#524d4b; 
+	height:55%; 
+	}
+#plain {height:10%;}
+#mainTab {
+	height:90%; 
+	margin:0 auto; 
+	width:85%;
+	} 
+#mainTab p{font-weight:bold;}
+
+/*picture layout for the main1*/
+#pict1{
+	width:33%; 
+    height:100%; 
+    float:left;
+ }
+#pict2{
+	width:33%; 
+	height:100%; 
+	float:left;
+	}
+#pict3{
+	width:33%; 
+	height:100%; 
+	float:right;
+	}
+img.pic1{
+	height:80%; 
+	width:95%; 
+	border-radius: 10px; 
+	border: 4px solid purple; 
+	}
+img.pic2{
+	height:100%;
+	width:100%; 
+	border-radius: 10px;
+	
+	}
+img.pic3{
+	height:70%; 
+	width:100%; 
+	border-radius: 10px;
+	border: 4px solid purple; 
+	}
+
+
+
+
+
+/*form of main page*/
+#form{
+	margin-top:8%;
+	clear:both;
+	text-align:center
+}
+#form h2{
+	font-family:Bodoni MT;
+color:#524d4b;
+text-align:center;
+font-weight:none;
+
+}
+#Text{height:100px;}
+#formt{
+	width:60%;
+	float:right;
+	text-align:left;
+}
+#btn1{
+	margin-left:10%;
+	font-family:Bodoni MT;
+	font-size:110%;
+}
+#formt span{color:red;
+margin-left:3%;
+font-size:70%;}
+#lastName{
+	margin-left:26px;
+}
+#firstName{
+	margin-left:25px;
+
+}
+#email{
+	margin-left:58px;
+}
+
+#sucs {margin-top:5%;
+text-align:center;
+clear:both;}
+#sucs span {
+	font-family:Bodoni MT;
+	color:#524d4b;
+	font-size:20px;
+	margin-left:10px;
+
+}
+#act{
+	width:145px;
+	height:25px;
+}
+#Text{
+	width:275px;
+}
+#btn1{
+	font-size:90%;
+	margin-left:-10px;
+}
+
+
+
+/*The body of our Pottery page*/
+ /*adding measurments fot the first part of the body*/
+#body1 {
+	    height:35%;
+	    color:#524d4b;
+	   }
+	/*creating a class to set correct measurments for the image in the first part of the body*/	   
+img.pottery1 {
+	height:180px; 
+	float:left; /*to make the image go to the left side of the page*/	
+	margin-right:15px;
+	margin-left:5%;
+	margin-right:30px;
+	border-radius: 7px;
+	 /*To add border to the picture*/
+	}
+	/*styling the main paragraph*/		
+#body1 p {
+	font-family:Helvetica;
+	font-weight:none;
+	color:#524d4b;
+	}
+	/*styling the main h2 in the first part of the body*/	
+#body1 h2{
+	font-family:Bodoni MT;
+	font-weight:none;
+	color:#524d4b;
+	}
+	/*adding measurments for the second part of the body*/
+#body2 {
+	height:35%;
+	color:#524d4b;
+	}
+	/*Dividing the second body into left side */
+#body2Left {
+	height:100%;
+	width:55%;
+	float:left;
+	margin-left:5%;
+	}
+	/*styling the body2 paragraph*/	
+#body2 p {
+	font-family:Helvetica;
+	font-weight:none;
+	color:#524d4b; 
+	float:left;
+	}
+	/*styling body2 h2*/		
+#body2 h2{
+	font-family:Bodoni MT;
+	font-weight:none;
+	color:#524d4b;
+	}
+	/*Dividing the second body into right side */
+#body2Right {
+	height:100%;
+	width:30%;
+	float:right;
+	margin-right:5%;
+	}
+	/*creating a class to set video measurments and style*/		
+video.vid {
+	height:100%;
+	float:right;
+	border-radius: 10px; /*to make corners a little curve*/
+	
+	}
+
+	/*Styling for the third section of the body*/
+#body3 {
+	height:50%;
+	color:#524d4b;
+	font-family:Helvetica;
+	}
+	/*Styling for h2 of the third section of the body*/
+#body3 h2{
+	font-family:Bodoni MT;
+	font-weight:none;
+	color:#524d4b;
+	margin-left:5%;
+	}
+	/*Styling for the paragraph of the third section of the body*/
+#body3 p {
+	margin-top:-25px; 
+	color:#524d4b;
+	margin-left:5%;
+	font-size:11px;
+	}
+	/*For the pictures of the materials*/
+#mat {
+	margin:0 auto;
+	width:75%;
+	height: 185px;
+	}
+	/*For each of the container of the pictures in the materials (for the hovering)*/
+#boxPottery{
+	position:relative;
+    height:180px;
+    float:left;
+    z-index:1;
+    width:33%;
+	}
+	/*Styling of the images of in the hover division*/
+#boxPottery img{
+         left:0;
+         position:absolute;
+         transition:opacity 1s ease-in-out;
+         height:180px;
+         width:250px;
+		 border:2px solid purple;
+		 border-radius:7px; /*to make corners a little curve*/
+        }
+	/*For the hovering and make the picture disappear*/
+#boxPottery img.front:hover{
+	/*To transition*/
+     opacity:0;
+     cursor:pointer; /*Change shape of cursor when it is on top of this page*/
+}
+
+
+
+
+
+/*The body of our PearlDiving page*/
+/*Creating a division for the first part of the body*/
+#info1{
+	height:40%; 
+	padding-top:4%; 
+	width:95%; 
+	margin: 0 auto;
+	}
+/*dividing the first part division into 2 halfs to add a picture*/	
+#info1LEFT{
+	float:left; 
+	width:30%;
+	height:100%;
+	}
+#info1LEFT img{
+	height:90%; 
+	width:90%; 
+	MARGIN-left:40%; 
+	margin-top:3%;
+	margin-bottom:3%;
+	float:right; 
+	border-radius:7px;
+	}
+/*dividing the div in half to add a information*/	
+#info1RIGHT{
+	float:right;
+	width:70%; 
+	height:100%;
+	}
+#info1RIGHT p{
+	float:left;
+	padding-left:4%;
+	}
+#info1RIGHT H3{
+	float:left; 
+	padding-left:4%;
+	}
+	
+/* second part of the body division*/
+#info2{
+	height:35%; 
+	clear:both; 
+	width:90%;
+	margin: 0 auto;
+	}
+#info2LEFT{
+	float:left;
+	width:66%;  
+	height:100%;
+	}
+
+
+#info2RIGHT{
+	float:right; 
+	width:30%; 
+	height:100%; 
+	}
+#info2RIGHT video {
+	height:190%; 
+	width:100%;
+	margin-top:-30%;
+	
+	}	
+/* third part of the body division*/
+#info3{
+	height:50%;
+	width:100%;
+	clear:both; 
+	
+	}
+#info3 h3{ 
+margin-left:5%;
+}
+
+#Ename{margin:0 auto;
+ width:90%; 
+ height: 185px; 
+ margin-left:7%;}
+
+#PICTURES{position:relative;
+height:180px;
+float:left;
+z-index:1;
+width:18%;
+}
+
+#PICTURES img{
+left:0;
+position:absolute;
+transition:opacity 1s ease-in-out;
+height:100%;
+width:90%;
+margin-right:5px;
+border:2px solid purple;
+border-radius:12px;
+}
+
+/*For the hovering and make the picture disappear*/
+#PICTURES img.front:hover{
+	/*To transition*/
+opacity:0;
+cursor:pointer; /*Change shape of cursor when it is on top of this page*/
+}
+
+
+/*main for Agriculture page*/
+ hr {border-top:1.5px solid purple;}
+ #main1 {height:35%;color:#524d4b;}
+#main1a {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+/* Agriculture*/
+#box{position:relative;
+height:200px;
+	width:200px;
+	float:left;
+	z-index:1;
+	width:25%;}
+	
+
+#box img{
+	position:absolute;
+	left:0;
+	transition:opacity 1s ease-in-out;
+	height:200px;
+	width:200px;
+}
+#box img.front:hover{
+	opacity:0;
+	cursor:pointer;
+}
+#main1a img{height:200px; width:200px; float:left; margin-right:15px; margin-left:45px;
+border-radius: 10px; }
+
+#main1a span{
+	font-weight:bolder;
+}
+#main1 p {font-family:Helvetica;font-weight:none;color:#524d4b; }
+#main1 h2{font-family:Bodoni MT;font-weight:none;color:#524d4b;}
+#main1a h2{font-family:Bodoni MT;font-weight:none;color:#524d4b;}
+
+#main2 {height:35%;
+margin-left:5%;
+margin-right:5%;}
+#mainL {height:100%;width:65%;float:left;margin-left:45px;}
+
+#main2 p {font-family:Helvetica;font-weight:none;color:#524d4b; float:left;}
+#main2 span{font-weight:bold;}
+#main2 h2{font-family:Bodoni MT;font-weight:none;color:#524d4b;}
+#mainR {height:100%;width:30%;float:right;}
+
+#mainR img{height:175px; width:250px; margin-right:15px; margin-left:25px;
+border-radius: 10px; }
+
+#main3 h1 {text-align:center;
+font-family:Bodoni MT;font-weight:none;color:#524d4b;}
+#main3 {
+	width:100%;
+	height:50%;
+}
+#main3 img{
+	width:150px;
+	height:150px;
+	border: 2px solid purple;
+	border-radius: 10px; 
+}
+#photos{
+	margin-left:10%;
+}
+ 
+ 
+ 
+ /*the footer of our pages*/	
+ #foot {
+	background-color:#eee9e3;
+	margin-left:-7px;
+	margin-right:-7px; 
+	margin-bottom:-1%;
+	font-size:14px;
+	
+	}
+#foot h2{
+	font-family:Bodoni MT;
+	font-weight:none;
+	color:#524d4b;
+	padding-left:45px;
+	}
+#foot span{
+	font-weight:bold;
+	}
+#foot table{
+	width:60%;
+	margin:0 auto;
+	text-align:center;
+	font-family:Bodoni MT;
+	}
+#foot a{color:brown;}
+/* images within the footer of the webpages */
+img.tabe {
+	height:40px; 
+	width:auto;
+	}
+	
+img.tabb {
+	height:30px;
+	width:auto;
+	}
+	
+	
+#foot td{
+	width:33.33%;
+	font-size:12px;
+	}
+	
+
+
+
+/*Our story page*/	
+#story{margin-left:5%; margin-right:5%;}
+
+/* mockup page */
+
+#mock{margin-left:5%; margin-right:5%; color:#524d4b; }
+#MockBODY{margin-left:5%; margin-right:5%; }
+#mockIMG{ margin-left:5%; margin-right:5%;}
+#mockIMG img{ width:23%; height:50%; margin-right:7px; border:2px solid purple;}
+#just{ margin-left:5%; margin-right:5%;}
