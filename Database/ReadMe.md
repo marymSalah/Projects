@@ -29,3 +29,6 @@ DDL commands include the creation of tables, indexes, sequences, and views neces
 ### DCL Commands
 Role-based access control is implemented with roles like admin_CAR and manager_car, granting specific permissions to different roles.
 
+### DML Commands 
+DML Commands were used to add sample data into the database.
+
