@@ -8,3 +8,6 @@ This repository contains the projects I've worked on.
 - HTML
 - CSS
 - Javascript
+
+### Databse
+- Oracle SQL
