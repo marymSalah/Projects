@@ -24,8 +24,8 @@ The project is organized into different HTML, CSS, and JavaScript files. Here's 
 - `pottery.html`: Page dedicated to pottery with details about its history and experiences.
 - `PearlDiving.html`: Page focusing on pearl diving activities.
 - `Agriculture.html`: Page highlighting Bahrain's agriculture.
-- `aboutUS.html`: About us section providing insights into the organization.
-- `MOCKup.html`: Mockups for future development.
+- `aboutUS.html`: About us section providing insights about working on this project.
+- `MOCKup.html`: Mockups that were used for the development of the website.
 
 Additionally, there are associated CSS files for styling (`style.css`) and JavaScript files (`script.js`) for interactivity.
 
