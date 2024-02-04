@@ -6,4 +6,4 @@ This repository contains the projects I've worked on.
 
 - **[Web Project](Web%20project)** ( HTML, CSS & JavaScript )
 - **[Database](Database)** ( Oracle SQL )
-- **[Medical System IOS Application](LabCaught%20IOS)** ( Swift )
+- **[Medical System IOS Application](LabCaught-IOS)** ( Swift )
