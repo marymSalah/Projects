@@ -25,3 +25,20 @@ LabCaught is an iOS app designed to help users find medical labs (or hospitals) 
 - **View labs / tests** (including Search, Sort, Filter)
 - **Home/Explore Screen** 
 
+## Log In Credentials
+
+---------------------------------------------
+| User Type | Username           | Password |
+|-----------|--------------------|----------|
+| Patient   | sa56               | 7655     |
+| Hospital  | Alhilal            | 12345    |
+| Lab       | BlossomMedical     | 12345    |
+---------------------------------------------
+
+
+## Screenshots
+
+![Main Page](images/MedicalSystem/mainPage.png)
+![Booking Details](images/MedicalSystem/bookingDetails.png)
+![Booking History](images/MedicalSystem/bookingHistory.png)
+![Home Page](images/MedicalSystem/HomePage.png)
