@@ -32,3 +32,87 @@ Role-based access control is implemented with roles like admin_CAR and manager_c
 ### DML Commands 
 DML Commands were used to add sample data into the database.
 
+#### Visual representation 
++----------------+          +--------------+        +------------------+
+| Manufacturer   |          | Model        |        | ExtraEquipment   |
++----------------+          +--------------+        +------------------+
+| Manufacturer_ID|----|     | Model_ID     |        | Extra_Equipment_ID|
+| m_Name         |    |     | Engine_Size  |        | equipment_Type   |
+| Phone_Number   |    |     | Make         |        | Quantity         |
+| Office_address |    |     | Model_Name   |        | colour           |
+| Working_hours  |    |     | model_Option |        | Price            |
++----------------+    |     | Fuel         |        +------------------+
+                      |     | model_Size   |
+                      |     | Manufacturer_ID|
+                      |     +--------------+
+                      |
+                      |
++----------------+    |
+| Customer       |    |    +------------------+
++----------------+    |    | Rental_status    |
+| Customer_ID    |-----|    +------------------+
+| Nationality    |    |    | status_id        |
+| First_name     |    |    | Return_Time      |
+| Phone_Number   |    |    | complications   |
+| Address        |    |    | status_description|
+| house_number   |    |    +------------------+
+| Road           |    |
+| add_Block      |    |
+| Gender         |    |
+| DOB            |    |
+| Email          |    |
+| CPR_Passport   |    |
++----------------+    |
+                      |
+                      |    +--------------+
+                      |    | Car          |
+                      |    +--------------+
+                      |    | Car_ID       |
+                      |    | Registration_due_date|
+                      |    | Insured      |
+                      |    | Colour       |
+                      |    | Mileage      |
+                      |    | Status       |
+                      |    | Daily_hire_rate|
+                      |    | return_penalty|
+                      |    | Car_Category_ID|
+                      |    | Model_ID     |
+                      |    +--------------+
+                      |
+                      |
+                      |    +--------------+
+                      |    | Location     |
+                      |    +--------------+
+                      |    | location_ID  |
+                      |    | phone_number |
+                      |    | Building     |
+                      |    | City         |
+                      |    | Address      |
+                      |    +--------------+
+                      |
+                      |    +--------------+
+                      |    | Car_Rental   |
+                      |    +--------------+
+                      |    | Car_Rental_ID|
+                      |----| Car_category |
+                           | rent_Duration |
+                           | rent_Cost     |
+                           | rent_Penalty  |
+                           | Car_ID        |
+                           | Customer_ID   |
+                           | status_id     |
+                           | location_ID   |
+                           | pickup_date   |
+                           +--------------+
+                           |
+                           +---------------------+
+                           | Rental_Equipement   |
+                           +---------------------+
+                           | Car_Rent_ID         |
+                           | Car_Rental_ID       |
+                           | Extra_Equipment_ID  |
+                           | Quantity            |
+                           +---------------------+
+                           
+
+
