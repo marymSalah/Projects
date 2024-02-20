@@ -1,9 +1,9 @@
-# LabCaught IOS Application 
 # LabCaught - Medical Lab Finder iOS App
 
 LabCaught is an iOS app designed to help users find medical labs (or hospitals) in Bahrain for running referred tests. This app caters to three main user types: Admin, Lab, and Patient.
 
 ## Features
+### Main Page
 
 
 ### All users 
