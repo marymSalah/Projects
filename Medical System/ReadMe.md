@@ -38,7 +38,8 @@ LabCaught is an iOS app designed to help users find medical labs (or hospitals) 
 
 ## Screenshots
 
-![Main Page](Projects/images/MedicalSystem/mainPage.png)
-![Booking Details](images/MedicalSystem/bookingDetails.png)
-![Booking History](images/MedicalSystem/bookingHistory.png)
-![Home Page](images/MedicalSystem/HomePage.png)
+![Main Page](images/mainPage.png)
+![Booking Details](images/bookingDetails.png)
+![Booking History](images/bookingHistory.png)
+![Home Page](images/HomePage.png)
+
