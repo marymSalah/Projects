@@ -19,10 +19,13 @@ A Java-based gym management system with a user-friendly graphical interface for 
 
 ## Screenshots
 #### Main Page
+<img src="images/MainPage.png" alt="Main Page" width="250">
 
-#### Memeber's Main Page 
+#### Employee's Main Page 
+<img src="images/EmployeePortal.png" alt="Employee's Main Page" width="250">
 
-#### Employee's Main Page
+#### Member's Main Page
+<img src="images/MemberPortal.png" alt="Member's Main Page" width="250">
 
 #### Exiting The Program
-
+<img src="images/exit.png" alt="When Exiting the Program" width="250">
