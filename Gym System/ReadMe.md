@@ -4,10 +4,10 @@ A Java-based gym management system with a user-friendly graphical interface for 
 
 ## Key Features
 
-- **Graphical User Interface (GUI):** Professional and intuitive design with JCheckBoxes and/or JRadioButtons.
+- **Graphical User Interface (GUI):** Professional and intuitive design
 - **Adding Employees and Members:** Easily add new gym employees and members through a validated input process.
 - **Updating Details:** Alter and update details for both gym members and employees.
-- **Assigning and Removing Members from Personal Trainers:** Smoothly assign or remove members from personal trainers with user-friendly interfaces.
+- **Assigning and Removing Members from Personal Trainers:** Assign or remove members from personal trainers with user-friendly interfaces.
 - **Deleting Employees and Members:** Secure deletion mechanisms with proper checks to prevent unintended deletions.
 - **Listing Assigned Members:** View a list of gym members assigned to a specific personal trainer.
 - **Generating Marketing Report:** Create a 'MarketingReport.txt' file with information about staff and students.
