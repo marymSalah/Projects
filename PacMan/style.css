@@ -1,0 +1,271 @@
+body {
+    background-color: #dbbad1 ;
+    text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    background-image: url('static/images/last.png'); /* Add your image path */
+    background-size: contain; /* Adjust this to 'cover' or 'contain' based on your preference */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    
+}
+html, body {
+    overflow: hidden;
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+ 
+}.info-panel {
+    position: relative;
+    width: 100%;
+    max-width: 300px; /* Adjust as necessary */
+    margin: auto;
+    background-color: #111;
+    border: 2px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh; /* Adjust height as needed */
+
+
+}
+/* Wrapper for title and upper section */
+.info-wrapper {
+    display: flex;
+    width: 100%;
+ 
+    height: 30%;
+}
+
+/* Upper section */
+.info-upper {
+ 
+     width: 35%;
+     height: 230%; /* Adjust height as needed */
+     background-image: url('static/images/barbie\ \(2\).png'); /* Add your image path */
+     background-size: contain; /* Adjust this to 'cover' or 'contain' based on your preference */
+     background-repeat: no-repeat; /* Prevent the image from repeating */
+     align-items: center;
+     margin-left: 5%;
+     flex: 1;
+     position: relative; /* Position relative for overlap */
+     z-index: 5; /* Ensure it overlaps above the lower section */
+   margin-top: 4%;/* Overlap by 20% */
+ }
+
+/* Title section */
+/* Title section */
+.info-title {
+   
+    width: 70%; /* Fixed width for title */
+    height: 100%; /* Full height of the wrapper */
+    display: flex; /* Use flexbox to center content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    color: #fff; /* Text color */
+    font-size: 1.1em; /* Font size for a larger, more prominent title */
+    font-weight: bold; /* Make the font bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow effect for better readability */
+
+  
+}
+
+
+/* Lower section with 3D Effect */
+.info-lower {
+    background-color: #333; /* Base background color */
+    height: 70%;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 4px solid #222; /* Dark border for depth */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5),
+                5px 5px 15px rgba(0, 0, 0, 0.7); /* 3D shadow effect */
+    transform: perspective(800px) rotateX(10deg); /* Slight tilt for 3D look */
+    position: relative;
+}
+
+
+/* Info Text Styling */
+.info-lower h3 {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.game-area {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.grid {
+    width: 560px;
+    height: 560px;
+    border: solid rgb(219, 186, 209) 5px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5),
+                5px 5px 15px rgba(0, 0, 0, 0.7); /* 3D shadow effect */
+  
+}
+
+.grid div {
+    height: 20px;
+    width: 20px;
+}
+
+.pac-dot {
+    background-image: url(static/images/band.png);
+    background-size: fill;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+
+.wall {
+    background-color: #ffdbfa;
+    box-sizing: border-box;
+    border-radius: 3px; /* Rounded corners */
+    box-shadow: inset 0px 0px 5px rgba(205, 185, 198, 0.5),
+                5px 5px 15px rgba(133, 0, 88, 0.7); /* 3D shadow effect */
+    transform: perspective(600px) rotateX(5deg); /* Slight tilt for 3D look */
+    
+}
+
+.power-pellet {
+    background-image: url(static/images/powerPellet.png);
+    background-size: fill;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+
+.empty {
+    background-color: black;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+
+.blinky {
+    background-image: url(static/images/redGhost.png);
+    background-size: fill;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-sizing: border-box;
+}
+
+.pinky {
+    background-image: url(static/images/pinkGhost.png);
+    background-size: fill;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-sizing: border-box;
+}
+
+.inky {
+    background-image: url(static/images/cyanGhost.png);
+    background-size: fill;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-sizing: border-box;
+}
+
+.clyde {
+    background-image: url(static/images/orangeGhost.png);
+    background-size: fill;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-sizing: border-box;
+}
+
+.pacman {
+    background-image: url(static/images/pacmanpink.png);
+    background-size: fill;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-sizing: border-box;
+}
+
+.scared-ghost {
+    background-color: grey;
+}
+
+.pause-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.pause-menu {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.pause-menu h2 {
+    margin-bottom: 20px;
+}
+
+.pause-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pause-menu li {
+    margin: 10px 0;
+}
+
+.pause-menu button {
+    background-color: #444;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pause-menu button:hover {
+    background-color: #555;
+}
+
+#fpsDisplay {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #fff;
+}
