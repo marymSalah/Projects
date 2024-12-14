@@ -1,0 +1,1340 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  
+}
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a1b1be;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Main app container adjustments */
+#app {
+    height: 100%;
+    width: 100%;
+    
+    background-color: #a1b1be;
+    padding: 0;
+    margin: 0 auto; /* Center the container horizontally */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+#app > * {
+    width: 100%;
+    padding: 0;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1; /* Allow main content to grow and fill remaining space */
+}
+/* Main container for the entire page */
+.guestmain {
+    display: flex;
+   margin-top: 3%;
+    height: 100%; /* Full viewport height */
+    width: 100%;
+}
+
+
+
+/* Profile container styling */
+.profilecontainer {
+    flex: 1; /* Allow the profile container to take remaining space */
+    max-width: 800px; /* Limit the width of the profile container */
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: #000000;
+}
+
+/* Profile header styling */
+.profile-header {
+    border-bottom: 2px solid #e2e2e2;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.profile-header h1 {
+    font-size: 24px;
+    color: #000;
+}
+
+.profile-header p {
+    font-size: 16px;
+    color: #000;
+}
+
+/* Profile details section */
+.profile-details {
+    padding-top: 10px;
+
+}
+
+.profile-details h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.profile-details p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+
+.forum-text {
+    font-style: italic; /* Italicize the text */
+    font-weight: bold;
+    color: #443b84; /* Set desired color for 'forum' */
+    font-family: 'Dancing Script', cursive; 
+}
+
+.header button:first-child {
+    margin-left: 0; /* No left margin for the first button */
+}
+
+.container {
+    display: flex;
+  
+    width: 60%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
+    min-height: 400px; /* Set a minimum height */
+}
+
+.left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.card-container {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 80%;
+}
+
+.signin {
+    text-align: center;
+}
+
+.signin h2 {
+    margin-top: 0;
+}
+
+.signin form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signin input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.signin button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00072D;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: #00072D;
+    color: #FFFFFF;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 30px;
+}
+
+.right-side h2 {
+    margin-top: 0;
+}
+
+.right-side button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFFFFF;
+    color: #00072D;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+
+/* Registration Card */
+.registration-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 400px;
+    margin-top: 3%; 
+}
+
+
+.registration-card h2 {
+    text-align: center;
+  
+}
+
+.registration-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-card label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.registration-card input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.registration-card button {
+    background-color: #00072D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.registration-card button:hover {
+    background-color: #00072D;
+}   
+
+/* ------------------------------- Main page css -------------------------------------------- */
+/* ------------------------------- Main page css -------------------------------------------- */
+
+
+/* Create a main content wrapper to handle layout */
+
+.postmrym {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* Header styles */
+.header {
+    position: fixed; /* Fixed position */
+    top: 0; /* Fixed at the top of the viewport */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    height: 60px; /* Fixed height for the header */
+    background-color: #00072D; /* Dark background color */
+    display: flex;
+    justify-content: space-between; /* Distribute items between the start and end */
+    align-items: center; /* Center items vertically */
+    z-index: 1000; /* Ensure header stays above other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    padding: 0 1rem; /* Add horizontal padding */
+}
+/* Button styles */
+.header button {
+    padding: 0.5rem 0.75rem; /* Adjusted padding inside buttons */
+    margin: 0 0.25rem; /* Adjusted margin between buttons */
+    font-size: 1rem; /* Button text size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border: none; /* Remove default button border */
+    background-color: #00072D; /* Button background color */
+    color: #fff; /* Button text color */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+/* Hover and disabled button styles */
+.header button:hover {
+    background-color: #30354d; /* Darker background color on hover */
+}
+
+.header button:disabled {
+    opacity: 0.5; /* Reduce opacity for disabled button */
+    cursor: not-allowed; /* Disable pointer cursor for disabled button */
+    background-color: #ccc; /* Lighter background color for disabled button */
+}
+/* Adjustments for welcome and links sections */
+.welcome-section {
+    text-align: left;
+}
+
+.links-section {
+    text-align: right;
+    padding-right: 1rem; /* Add padding to the right */
+}
+
+/* Styling for welcome heading and forum text */
+.welcome-heading {
+    font-size: 2rem; /* Adjust heading font size */
+    margin: 0; /* Remove margin */
+    color: white;
+    font-family: 'Merriweather', serif;
+
+
+}
+
+
+/* Ensure content wrapper width doesn't exceed viewport */
+.content-wrapper {
+    margin-top: 60px;   /* Aligns with header height */
+    display: flex;
+    width: 100%;
+    padding: 0;
+    align-items: flex-start;
+    box-sizing: border-box; /* Includes padding in width calculation */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.leftContainerMain {
+    width: 20%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Prevents overflow from padding */
+}
+
+.rightContainerMain {
+    margin: 0;
+    padding: 0;
+    width: 80%; /* Adjusted to avoid exceeding 100% with left container */
+    overflow: hidden;
+    height: 100vh; /* Full viewport height */
+    box-sizing: border-box;
+}
+
+
+.mainPostSection {
+    max-height: calc(100vh - 200px); /* Adjust height based on other elements' heights */
+    overflow-y: auto; /* Allow vertical scrolling */
+    padding-right: 10px; /* Optional: add padding to avoid cutting off scrollbar */
+}
+
+.mainPostCard {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin: 5% auto 0 auto; /* Combined margin-top and center alignment */
+    width: 150%;
+    max-width: 600px;
+    transition: transform 0.2s;
+}
+
+/* Add hover effect */
+.mainPostCard:hover {
+    transform: translateY(-2px);
+}
+
+/* Main Post Card Content Container */
+.mainPostCardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+}
+
+/* Post Title */
+.mainPostCardTitle {
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;
+    color: #00072D;
+    font-size: 1.2rem;
+}
+
+/* Adjusting Text Styling */
+.mainPostCardText {
+    font-size: 1rem;
+    color: #00072D;
+    margin-bottom: 1rem;
+    text-align: center; /* Center the text */
+    text-decoration: none;
+    width: 100%;
+}
+
+.mainPostCardContent a {
+    font-size: 1rem;
+    color: #00072D;
+    margin-bottom: 1rem;
+    text-align: center; /* Center the link text */
+    text-decoration: none;
+    width: 150%;
+}
+
+.mainPostCardMeta {
+    font-size: 0.9rem;
+    color: #00072D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    text-decoration: none !important;
+    width: 100%; /* Ensure full width */
+}
+
+/* Comment Section */
+.comment-section {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the button */
+    margin-top: 1rem;
+}
+
+/* Comment Button */
+.comment-btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #00072D;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.comment-btn:hover {
+    background-color: #443b84;
+}
+
+
+/* Scrollable Comments Section */
+#commentsSection {
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    max-height: 400px; /* Fixed height for scroll */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 1rem;
+    /* Custom scrollbar styling */
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+/* Webkit scrollbar styling */
+#commentsSection::-webkit-scrollbar {
+    width: 6px;
+}
+
+#commentsSection::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+#commentsSection::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+#commentsSection::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Individual Comment Card */
+.commentCard {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.2rem;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    transition: transform 0.2s ease;
+}
+
+.commentCard:hover {
+    transform: translateY(-2px);
+}
+
+/* Comment Card Content */
+.commentCard p {
+    margin: 0.5rem 0;
+    color: #00072D;
+}
+
+.commentCard p:first-child {
+    color: #666;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.commentCard strong {
+    color: #00072D;
+}
+
+/* Redesigned Comment Form */
+.comment-form {
+    position: sticky;
+    bottom: 0;
+    width: 90%;
+    max-width: 600px;
+    margin: 1.5rem auto;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Enhanced Comment Input */
+#commentInput {
+    width: 100%;
+    min-height: 80px;
+    padding: 1rem;
+    border: 2px solid #eef1f5;
+    border-radius: 8px;
+    resize: none;
+    font-family: inherit;
+    font-size: 0.95rem;
+    background-color: #f8f9fa;
+    transition: all 0.2s ease;
+}
+
+#commentInput:focus {
+    outline: none;
+    border-color: #00072D;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+#commentInput::placeholder {
+    color: #aab0b7;
+}
+
+/* Submit Button Container */
+.submit-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Enhanced Submit Button */
+#submitCommentBtn {
+    padding: 0.75rem 1.5rem;
+    background-color: #00072D;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#submitCommentBtn:hover {
+    background-color: #00072D;
+    transform: translateY(-1px);
+}
+
+#submitCommentBtn:active {
+    transform: translateY(0);
+}
+
+/* No Comments Message */
+#commentsSection p:only-child {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    margin: 2rem 0;
+}
+
+
+.username {
+    font-weight: bold;
+    font-size: 1.5rem; 
+    padding-left: 2rem;
+}
+
+.post-date {
+    color: #777; /* Adjust color of the date to make it less prominent */
+    padding-right: 2rem;
+}
+.mainPostCardUsername {
+    font-weight: bold;
+    color: #00072D;
+    text-decoration: none;
+    margin-left: 1%;
+    
+}
+
+.mainPostCardDivider {
+    border-bottom: 1px solid #777; /* Add a line under the message */
+    margin-top: 1rem; /* Adjust spacing as needed */
+}
+.welcome-heading {
+    font-size: 2rem; /* Adjust heading font size */
+    margin-bottom: 1rem; /* Optional: Adjust bottom margin */
+    text-align: center;
+    color: white;
+}
+
+.forum-text {
+    font-style: italic; /* Italicize the text */
+    font-weight: bold;
+    color: #443b84; /* Set desired color for 'forum' */
+    font-family: 'Dancing Script', cursive; 
+
+}
+/* Container for interact items */
+.interact {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align items vertically centered */
+    gap: 1rem; /* Space between items; adjust as needed */
+    margin-top: 1rem; /* Margin around the container */
+    padding: 1rem; /* Padding inside the container */
+}
+
+/* Style for the dropdown */
+.post-categories select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    color: grey;
+}
+
+/* Style for the comment section */
+.comment {
+    color: #777;
+    font-size: 1rem;
+
+}
+
+.comment a {
+    color: #777; /* Sets the text color of the link inside the comment div */
+    text-decoration: none; /* Optional: removes underline from links */
+}
+
+.comment a:hover {
+    color: #000;
+}
+
+.comment i {
+    color: #777; /* Sets the color of the icon inside the comment div */
+}
+
+.comment:hover {
+    color: #000;
+}
+
+/* Style for the likes section */
+.likes {
+    display: flex;
+    align-items: center;
+}
+
+.likes button {
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #777;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.likes button:hover {
+    color: #000;
+}
+
+.likes button i {
+    margin-right: 0.5rem;
+}
+
+
+/* Main container for comments and post details */
+.Commentcontainer {
+    margin-top: 80px; /* Ensure space below fixed header */
+    width: 80%;
+    margin: 120px auto 20px; /* Adjusted margins */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Post details */
+.post-details {
+    background-color: #f0f8ff; /* Light blue */
+    border: 1px solid #d3e9ff; /* Lighter blue */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.post-details h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.post-details p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.post-details .meta {
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: 8px;
+}
+
+/* Individual comment section */
+.details {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.details .user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.details .user-info h3 {
+    color: #00072D; /* Blue */
+    font-weight: bold;
+    margin-right: 10px; /* Space between h3 and .meta */
+}
+
+.details .user-info .meta {
+    color: #777;
+    font-size: 0.8rem;
+    margin-left: auto; /* Push meta to the right */
+}
+
+.details .comment-content {
+    text-align: center;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Add Comment Form */
+.add-comment {
+    margin-top: 20px;
+}
+
+.add-comment h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.add-comment form {
+    margin-top: 10px;
+}
+
+.add-comment label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+
+
+/* Main content area for posts */
+.posts-container-guest {
+    flex: 1; /* Take up the remaining space after the header */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+   margin-top: 9%;
+    background-color: #f9f9f9; /* Light background color for the content area */
+    height: 90%;
+}
+
+/* Style for individual post cards */
+.guestpost-card {
+    background: #a1b1be; /* White background for posts */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 1rem; /* Space between posts */
+    padding: 1rem; /* Padding inside each post */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions for hover effects */
+}
+
+/* Hover effects for post cards */
+.guestpost-card:hover {
+    background-color: #f1f1f1; /* Slightly darker background on hover */
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+/* Styling for post links */
+.post-link {
+    text-decoration: none; /* Remove default underline from links */
+    color: inherit; /* Inherit color from parent */
+}
+
+/* Styling for post titles */
+.guestpost-title {
+    margin: 0 0 0.5rem 0; /* Remove default margin */
+    color: #333; /* Darker text color for readability */
+    font-size: 1.5rem; /* Larger font size for titles */
+}
+
+/* Styling for post content */
+.guestpost-content {
+    margin: 0 0 0.5rem 0; /* Remove default margin */
+    color: #555; /* Slightly lighter text color */
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Styling for post metadata */
+.guestpost-meta {
+    font-size: 0.875rem; /* Smaller font size for metadata */
+    color: #777; /* Lighter text color */
+    margin-top: 1rem; /* Space above metadata */
+}
+
+
+/* ---------- */
+
+.post-comments-content{
+   
+    height: 90%;
+    width: 80%;
+    margin-top: 6%;
+}
+
+.com-post {
+ border-radius: 10px;  
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */ 
+}
+
+
+.bluetrial{
+  
+    height: 40vh; /* 20% of viewport height */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    padding: 10px; /* Add padding inside the container */
+    border-radius: 5px; /* Optional: add rounded corners */
+}
+
+.com-post-main {
+    margin-bottom: 10px; /* Space between comments */
+    background-color: #ffffff; /* White background for comments */
+    border: 1px solid #ddd; /* Light border around each comment */
+    padding: 10px; /* Padding inside each comment */
+    border-radius: 5px; /* Optional: add rounded corners */
+}
+
+.adding-com {
+  
+    padding: 10px; /* Space inside the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    max-width: 100%; /* Maximum width of the form container */
+    margin: 8px auto; /* Center the form and add vertical spacing */
+    margin-bottom: 2%;
+}
+
+.adding-com form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+.adding-com label {
+    font-size: 1.1em; /* Slightly larger font size for the label */
+    margin-bottom: 10px; /* Space below the label */
+    color: #333; /* Dark color for text */
+}
+
+.adding-com textarea {
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Space inside the textarea */
+    margin-bottom: 15px; /* Space below the textarea */
+    border: 1px solid #ddd; /* Light border for the textarea */
+    border-radius: 5px; /* Rounded corners */
+    resize: vertical; /* Allow vertical resizing only */
+    font-size: 1em; /* Font size inside the textarea */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.adding-com button {
+    background-color: #00072D; /* Blue background color for the button */
+    color: #fff; /* White text color */
+    border: none; /* Remove default border */
+    padding: 10px 15px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex;
+    align-items: center; /* Center the icon and text vertically */
+    justify-content: center; /* Center the icon and text horizontally */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition effects */
+}
+
+.adding-com button:hover {
+    background-color: #00072D; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly scale up the button on hover */
+}
+
+.adding-com button i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+
+
+.geustcommentContainer{
+    margin-top: 6%;
+    width: 100%;
+    height: 80%;
+}
+
+
+
+/* Filter Section */
+.filter-sectionmem {
+    width: 15%;
+  
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
+}
+
+.flter-but {
+    display: flex;
+    justify-content: space-between; /* Space between the buttons */
+    gap: 10px; /* Space between buttons */
+}
+
+.flter-but button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.flter-but button:first-child {
+    background-color: #00072D;
+    color: white;
+}
+
+.flter-but button:last-child {
+    background-color: #00072D;
+    color: white;
+}
+
+.flter-but button:hover {
+    opacity: 0.8;
+}
+
+
+
+/* Main Content */
+.main-contentmem {
+    width: 85%;
+    padding: 10px;
+   
+}
+
+.main-content{
+    margin-top: 60px;  /* Same as header height */
+    display: flex;     /* Use flexbox */
+    justify-content: space-between;  /* Space between the two containers */
+    width: 100%;
+    padding: 0;
+    align-items: flex-start; /* Align items at the top */
+}
+
+#user-filter,
+#like-filter {
+    margin-bottom: 30px; /* Adjust the value as needed for spacing */
+}
+
+label[for="category-filter"] {
+    display: block;
+    margin-bottom: 20px; /* Adjust the value as needed for spacing */
+}
+
+.filter-group {
+    margin-top: 1%;
+    display: flex;
+ flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Adjust spacing as needed */
+    margin-bottom: 120px; 
+}
+.filter-group label {
+    margin-left: 20px; /* Space between checkbox and label text */
+}
+
+.icon-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    border-radius: 50%;
+    background-color: #00072D; /* Background color for the circle */
+    color: white; /* Color of the icon */
+    font-size: 16px; /* Adjust icon size */
+    border: 1px solid white; /* Border around the circle */
+    margin-left: 7px; /* Space between the icon and text */
+    margin-top: 0%;
+    margin-bottom: 1%;
+}
+
+.icon-container i {
+    color: white;
+}
+
+
+
+.mem{
+    /* Styling for welcome heading and forum text */
+
+   
+    margin: 0; /* Remove margin */
+    color: white;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+
+/*----creating post css-------*/ 
+
+button {
+    background-color: #00072D; /* Blue background color for buttons */
+    color: #fff; /* White text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Padding inside the buttons */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 0.9em; /* Slightly smaller font size for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: inline-flex;
+    align-items: center; /* Center the icon and text vertically */
+    justify-content: center; /* Center the icon and text horizontally */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition effects */
+}
+
+button:hover {
+   
+    transform: scale(1.05); /* Slightly scale up the button on hover */
+}
+
+button i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.navigation-buttonsm {
+    margin-top: 20px; /* Space above the navigation buttons */
+}
+.creatingcontainer {
+   
+    width: 100%;
+    height: 100%;
+}
+
+/* Specific form class */
+.create-post-form {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.form-and-sidebar-container {
+
+    width: 100%; /* Ensure it takes full width */
+    height: 100vh; /* Make it take full viewport height */
+   
+    padding: 0; /* Remove default padding */
+    margin-top: 10%;
+}
+
+
+/* Sidebar */
+.sidebar {
+    
+    width: 25%; /* Adjust as needed */
+    padding: 10px;
+    border-right: 1px solid #ddd;
+    margin-left: 5px; 
+    flex-shrink: 0; /* Prevent the sidebar from shrinking */
+    display: flex; /* Ensures items are aligned vertically */
+    flex-direction: column; /* Stacks items vertically */
+}
+
+/* Main content area */
+.main-creating {
+    width: 70%; /* Adjust as needed */
+    padding: 20px;
+   
+    display: flex;
+    flex-direction: column; /* Ensure content inside is stacked vertically */
+    flex-shrink: 0; /* Prevent the sidebar from shrinking */
+}
+
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.messtrial{
+   display: flex;
+    width: 100%;
+    height: 100%;
+  
+    margin-top: 10%;
+}
+
+
+/* -------------------------------- CHAT -------------------------------- */
+.app-container {
+    display: flex;
+    width: 1800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ddd;
+    display: flex;
+    position: relative;
+}
+.chat-header, .users-header {
+    background-color: #443b84;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.chat-messages {
+    height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+.message {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 15px;
+    max-width: 70%;
+}
+.received {
+    background-color: #f0f0f0;
+    align-self: flex-start;
+}
+.sent {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+    margin-left: auto;
+}
+.input-area {
+    display: flex;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+#messageInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+#send-button {
+    background-color: #075e54;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.users-container {
+    width: 250px;
+    background-color: #fff;
+}
+.users-list {
+    height: 440px;
+    overflow-y: auto;
+    padding: 10px;
+}
+.user-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+.user-item:hover {
+    background-color: #f5f5f5;
+}
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin-right: 10px;
+}
+.user-name {
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .app-container {
+        flex-direction: column;
+        width: 75%;
+    }
+    .users-container {
+        width: 100%;
+    }
+    .users-list {
+        height: 200px;
+    }
+}
+
+/* --------------------------------- END CHAT -------------------------------- */
+
+#notiBtn {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.notification-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.notification-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    position: relative;
+}
+
+.notification-dot {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+/* Dropdown styling */
+.notification-dropdown {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.dropdown-header {
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.notification-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.notification-item.unread {
+    background-color: #9d9d9d;
+}
+
+.notification-item:hover {
+    background-color: #f2f2f2;
+}
+
+.dropdown-footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    border-top: 1px solid #eee;
+}
+
